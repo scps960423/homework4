@@ -40,6 +40,7 @@ public class MainActivity extends ActionBarActivity
 	private int Counter;  //static !?
 	
 	private TextView textTile;
+	private TextView textUser;
 	
 	private Dialog dialogName;
 
@@ -56,6 +57,8 @@ public class MainActivity extends ActionBarActivity
 		
 		// TextView
 		textTile=(TextView)findViewById(R.id.textView4);
+		textUser=(TextView)findViewById(R.id.textView6);
+		
 
 		// EditText  //發現錯字
 		EditInput=(EditText)findViewById(R.id.editText1);
@@ -77,7 +80,7 @@ public class MainActivity extends ActionBarActivity
 	private void initGame() {
 		Number=(int)(Math.random()*99)+1;
 		Counter=1;
-		textTile.setText("("+Counter+")");
+		textTile.setText("("+Counter+")"+"("+Number+")");
 	}
 
 	private void submitScore() {
@@ -131,6 +134,14 @@ public class MainActivity extends ActionBarActivity
 						dialogName=new Dialog(MainActivity.this);
 						dialogName.setTitle("猜數字");
 						dialogName.setCancelable(false);
+						dialogName.setContentView(R.layout.mydlg);
+						Button loginBtnOk=(Button)dialogName.findViewById(R.id.butOk);
+						Button loginBtnCancel=(Button)dialogName.findViewById(R.id.butCancel);
+						loginBtnOk.setOnClickListener(loginDlgBtnOKOnClkLis);
+						loginBtnCancel.setOnClickListener(loginDlgBtnCancelOnClkLis);
+						dialogName.show();
+						
+						
 						
 						
 				}
@@ -175,7 +186,39 @@ public class MainActivity extends ActionBarActivity
 
 	}
 
+	private Button.OnClickListener loginDlgBtnOKOnClkLis = new Button.OnClickListener() {
 
+		@Override
+		public void onClick(View v) {
+			// TODO 自動產生的方法 Stub
+			EditText edtUserName =(EditText)dialogName.findViewById(R.id.editText1);
+			
+			
+			textUser.setText(edtUserName.getText().toString());
+			
+			dialogName.cancel();
+			
+			
+		}
+	
+	
+	};
+	private Button.OnClickListener loginDlgBtnCancelOnClkLis = new Button.OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			// TODO 自動產生的方法 Stub
+			
+			
+			
+			dialogName.cancel();
+		
+			
+		}
+	
+	
+	};
+	
 
 	private Button.OnClickListener newbutton =new Button.OnClickListener () {
 

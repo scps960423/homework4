@@ -83,6 +83,23 @@
         android:text="(OAO)" 
          android:textSize="20dp"/>
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="43dp"
+        android:text="玩家姓名" 
+        android:textSize="20dp"/>
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/textView4"
+        android:text="(O w O)"
+        android:textSize="20dp" />
 
 </RelativeLayout>

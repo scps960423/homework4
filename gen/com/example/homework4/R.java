@@ -1080,7 +1080,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020057;
     }
     public static final class id {
-        public static final int actionT=0x7f090044;
+        public static final int actionT=0x7f090048;
         public static final int action_bar=0x7f09001c;
         public static final int action_bar_activity_content=0x7f090001;
         public static final int action_bar_container=0x7f09001b;
@@ -1092,10 +1092,12 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_close_button=0x7f090024;
-        public static final int action_settings=0x7f090043;
+        public static final int action_settings=0x7f090047;
         public static final int activity_chooser_view_content=0x7f090025;
         public static final int always=0x7f09000f;
         public static final int beginning=0x7f090016;
+        public static final int butCancel=0x7f090046;
+        public static final int butOk=0x7f090045;
         public static final int button1=0x7f090040;
         public static final int button2=0x7f09003f;
         public static final int checkbox=0x7f09002d;
@@ -1144,6 +1146,8 @@ containing a value of this type.
         public static final int textView2=0x7f09003d;
         public static final int textView3=0x7f090041;
         public static final int textView4=0x7f090042;
+        public static final int textView5=0x7f090043;
+        public static final int textView6=0x7f090044;
         public static final int title=0x7f09002b;
         public static final int top_action_bar=0x7f090020;
         public static final int up=0x7f090021;
@@ -1201,7 +1205,8 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_main=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
+        public static final int mydlg=0x7f030019;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -2628,7 +2633,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x0101040c
+            0x0101012f, 0x01010130, 0x01010131, 0x010103ea
         };
         /**
           <p>
